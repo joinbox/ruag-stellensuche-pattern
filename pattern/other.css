@@ -1,0 +1,50 @@
+@font-face {
+    font-weight: 200;
+    font-family: "Simplon";
+    font-style: normal;
+    src:url(webfonts/RUAGSimplon-Light-WebXL.eot);
+    src:url(webfonts/RUAGSimplon-Light-WebXL.eot?#iefix) format("embedded-opentype"),
+    url(webfonts/RUAGSimplon-Light-WebXL.woff2) format("woff2"),
+    url(webfonts/RUAGSimplon-Light-WebXL.woff) format("woff"),
+    url(webfonts/RUAGSimplon-Light-WebXL.ttf) format("truetype"),
+    url(webfonts/RUAGSimplon-Light-WebXL.svg#Font) format("svg");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "Simplon";
+    font-style: normal;
+    src:url(webfonts/RUAGSimplon-Regular-WebXL.eot);
+    src:url(webfonts/RUAGSimplon-Regular-WebXL.eot?#iefix) format("embedded-opentype"),
+    url(webfonts/RUAGSimplon-Regular-WebXL.woff2) format("woff2"),
+    url(webfonts/RUAGSimplon-Regular-WebXL.woff) format("woff"),
+    url(webfonts/RUAGSimplon-Regular-WebXL.ttf) format("truetype"),
+    url(webfonts/RUAGSimplon-Regular-WebXL.svg#Font) format("svg");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 600;
+    font-family: "Simplon";
+    font-style: normal;
+    src:url(webfonts/RUAGSimplon-Medium-WebXL.eot);
+    src:url(webfonts/RUAGSimplon-Medium-WebXL.eot?#iefix) format("embedded-opentype"),
+    url(webfonts/RUAGSimplon-Medium-WebXL.woff2) format("woff2"),
+    url(webfonts/RUAGSimplon-Medium-WebXL.woff) format("woff"),
+    url(webfonts/RUAGSimplon-Medium-WebXL.ttf) format("truetype"),
+    url(webfonts/RUAGSimplon-Medium-WebXL.svg#Font) format("svg");
+    font-display: swap;
+}
+
+
+
+html {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 15px
+    }
+}
