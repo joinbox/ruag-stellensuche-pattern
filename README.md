@@ -61,4 +61,4 @@ Abhängig von der «Übersicht mit Filterfunktion».
 
 # Kontakt
 
-Bei Fragen kontaktiert Solique Fabian Jordi ([fabian@joinbox.com](fabian@joinbox.com), [+41 76 548 76 06](+41 76 548 76 06)).
+Bei Fragen kontaktiert Solique Fabian Jordi unter [fabian@joinbox.com](fabian@joinbox.com) oder [+41 76 548 76 06](+41 76 548 76 06).
