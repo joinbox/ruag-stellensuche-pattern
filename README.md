@@ -1,6 +1,6 @@
 # RUAG MRO – Stellensuche
 
-Version 2.0
+Version 2.1 (aktualisiert am 28. Mai 2020)
 
 ---
 
@@ -34,7 +34,7 @@ Da die Bauklötze abhängig sind von einigen Eigenschaften, die typischerweise a
 
 Die Stellensuche besteht aus drei Ansichten:
 
-## 1. Lose Übersicht
+## 1. Lose Übersicht (Kachelübersicht)
 
 - Datei: [index.html](src/index.html)
 - Die Kacheln der Stellensuche haben je eine bestimmte Breite. Um – für die Desktop-Ansicht – 3 x 2 Kacheln darstellen zu können, bedarf es einem Wrapper, der die Breitenbeschränkung vornimmt.
@@ -51,6 +51,18 @@ Die Stellensuche besteht aus drei Ansichten:
 
 - Datei: [job.html](src/job.html)
 - Diese Ansicht ist für den Druck optimiert
+
+## Verhalten der Links zwischen den einzelnen Ansichten
+
+- Von der **Kachel-Übersicht** soll nie ein neuer Tab geöffnet werden – egal, ob man direkt auf einen Job oder die rote Kachel klickt
+	- Klick auf einen (grauen) Job öffnet die Detail-Seite im bestehenden Browser-Fenster via „_top“ oder „_parent“-Target-Attribut auf dem Link im Iframe. Allenfalls benötigt das Iframe zusätzlich einen base-Tag.
+	- selbiges Verhalten gilt für die rote Kachel. Sie führt zur filterbaren Übersicht, aber ohne einen neuen Tab zu öffnen.
+- Somit gilt selbiges für die **filterbare Übersicht**: Die Detail-Ansicht eines Jobs öffnet sich nicht in einem neuen Tab, sondern „löst“ sich aus dem Iframe. Das führt zu folgendem Zurück-Link-Verhalten:
+- Auf einer **Detail-Seite** eines Jobs verhält sich der „Zurück zu Ruag“-Link folgendermassen:
+	- gelangt man von Kachel-Übersicht auf einen Job, so soll der Zurück-Link zur Kachel-Übersicht
+	- gelangt man von der filterbaren Übersicht auf einen Job, so soll man zurück zur filterbaren Übersicht kommen
+	- gelangt man von Google oder sonstwo auf einen Job, so soll der Zurück-Link auf die Startseite der Ruag-Website linken.
+Für dieses Verhalten werden Sie die opener-URL jeweils an die Links hängen müssen. Prüfen Sie dabei diese auf ihre Korrektheit, um böswillige Redirects zu unterbinden. Eine Regex dazu finden Sie in den [Anforderungen]((https://docs.google.com/document/d/1kxOjLWtOLRKewrE3sZUgugCVkHEyIBf8fqWZoRnmLvY/edit#heading=h.e37285517tv)).
 
 ---
 
