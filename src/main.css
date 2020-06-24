@@ -1097,8 +1097,14 @@ input {
   margin: 0;
 }
 
-.ruag-o-title--page-title + .ruag-o-section {
-  padding-top: 0;
+.ruag-o-title--page-title + .ruag-o-section .ruag-c-wysiwyg__wrapper:first-child .ruag-c-wysiwyg p:first-child {
+  margin-top: -6rem;
+}
+
+@media (min-width: 52.5em) {
+  .ruag-o-title--page-title + .ruag-o-section .ruag-c-wysiwyg__wrapper:first-child .ruag-c-wysiwyg p:first-child {
+    margin-top: -8rem;
+  }
 }
 
 .ruag-o-tag {
@@ -5382,13 +5388,18 @@ body.old-ff .ruag-c-card__content {
   margin-top: 2.5rem;
 }
 
-@media (max-width: 52.49em) {
-  .ruag-c-jobsearch .ruag-c-cta__button,
-  .ruag-c-jobsearch .ruag-c-button,
-  .ruag-c-jobsearch .ruag-c-button input {
-    width: 100%;
-    margin: 0;
-  }
+.ruag-c-jobsearch .ruag-c-cta__inner,
+.ruag-c-jobsearch .ruag-c-cta__button,
+.ruag-c-jobsearch .ruag-c-button,
+.ruag-c-jobsearch .ruag-c-button input {
+  width: 100%;
+  margin: 0;
+}
+
+.ruag-c-jobsearch .ruag-c-cta {
+  transform: none;
+  opacity: 1;
+  transition: none;
 }
 
 .ruag-c-jobsearch .ruag-c-button--primary2::after {
@@ -5402,10 +5413,11 @@ body.old-ff .ruag-c-card__content {
 .ruag-c-jobsearch .ruag-c-button .form-submit {
   position: relative;
   z-index: 1;
-  padding: 6PX 2rem 4PX;
+  padding: 6PX 1.5rem 4PX;
   font-weight: 600;
   font-size: 18PX;
   line-height: 32PX;
+  text-align: center;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -5429,9 +5441,14 @@ body.old-ff .ruag-c-card__content {
 }
 
 .ruag-c-jobsearch__joblisting--immobilien {
-  display: -moz-flex;
-  display: flex;
   padding: 1rem 0;
+}
+
+@media (min-width: 33.75em) {
+  .ruag-c-jobsearch__joblisting--immobilien {
+    display: -moz-flex;
+    display: flex;
+  }
 }
 
 .ruag-c-jobsearch__joblisting--immobilien .ruag-c-jobsearch__joblisting-image {
@@ -5792,10 +5809,6 @@ body.old-ff .ruag-c-card__content {
   }
 }
 
-.ruag-c-jobteaser .job {
-  height: 184PX;
-}
-
 .ruag-c-jobteaser__inner {
   display: flow-root;
   margin: -1rem;
@@ -5809,12 +5822,6 @@ body.old-ff .ruag-c-card__content {
   height: 15.625rem;
   padding: 1rem;
   text-decoration: none;
-}
-
-@media (max-width: 33.74em) {
-  .ruag-c-jobteaser__item:nth-last-child(2), .ruag-c-jobteaser__item:nth-last-child(3), .ruag-c-jobteaser__item:nth-last-child(4) {
-    display: none;
-  }
 }
 
 .ruag-c-jobteaser__item-inner {
@@ -6027,12 +6034,14 @@ body.old-ff .ruag-c-card__content {
 }
 
 .ruag-c-jumbotron--textonly .ruag-c-jumbotron__text, .ruag-c-jumbotron--search-form .ruag-c-jumbotron__text, .ruag-c-jumbotron--login-form .ruag-c-jumbotron__text {
+  max-width: 51.25rem;
+  margin: 0 auto;
   padding: 0 10% 0 20PX;
 }
 
 @media (min-width: 52.5em) {
   .ruag-c-jumbotron--textonly .ruag-c-jumbotron__text, .ruag-c-jumbotron--search-form .ruag-c-jumbotron__text, .ruag-c-jumbotron--login-form .ruag-c-jumbotron__text {
-    padding: 0;
+    padding: 0 20PX;
   }
 }
 
@@ -6068,6 +6077,7 @@ body.old-ff .ruag-c-card__content {
 }
 
 .ruag-c-jumbotron--search-form .ruag-c-jumbotron__text, .ruag-c-jumbotron--login-form .ruag-c-jumbotron__text {
+  max-width: 51.25rem;
   margin-bottom: 2rem;
   padding: 0 20PX 0 20PX;
 }
@@ -7805,6 +7815,10 @@ body.toolbar-fixed.toolbar-tray-open.toolbar-horizontal .ruag-c-navigation__cont
   padding: 3rem 2rem;
 }
 
+.ruag-c-tabularlist__item div.ruag-c-card__title {
+  margin-bottom: 1rem;
+}
+
 .ruag-c-tabularlist--1-items-per-row .ruag-c-tabularlist__item {
   width: 100%;
 }
@@ -7854,10 +7868,6 @@ body.toolbar-fixed.toolbar-tray-open.toolbar-horizontal .ruag-c-navigation__cont
   .ruag-c-tabularlist--4-items-per-row .ruag-c-tabularlist__item {
     width: 25%;
   }
-}
-
-.ruag-c-tabularlist div.ruag-c-card__title {
-  margin-bottom: 1rem;
 }
 
 .ruag-c-imagelist__list {
@@ -8779,6 +8789,11 @@ div#sliding-popup.eu-cookie-withdraw-wrapper {
   text-decoration: none;
 }
 
+.ruag-c-markenportal .ruag-c-subheading {
+  max-width: 48.75rem;
+  margin: 0 auto 2rem;
+}
+
 .ruag-c-markenportal .ruag-o-section {
   padding: 6rem 0 3rem;
 }
@@ -8806,6 +8821,10 @@ div#sliding-popup.eu-cookie-withdraw-wrapper {
 
 .ruag-c-immo__about-object {
   margin-top: 4rem;
+}
+
+.ruag-c-immo__pagination .u-layout-width--6 {
+  max-width: 100%;
 }
 
 .ruag-c-immo .ruag-o-title--page-title [class*="u-layout"] {
