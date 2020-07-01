@@ -24,3 +24,4 @@ public_html/bower/
 /phpunit.xml
 node_modules/
 /public_html/build/
+src/.DS_Store
