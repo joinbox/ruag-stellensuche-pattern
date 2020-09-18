@@ -1,6 +1,6 @@
 # RUAG MRO – Stellensuche
 
-Version 2.1 (aktualisiert am 28. Mai 2020)
+Version 3.0 (aktualisiert am 18. September 2020)
 
 ---
 
