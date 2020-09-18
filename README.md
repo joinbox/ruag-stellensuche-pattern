@@ -50,6 +50,7 @@ Die Stellensuche besteht aus drei Ansichten:
 ## 3. Detailansicht einer Stelle
 
 - Datei: [job.html](src/job.html)
+- JS für den Header und das Akkordion (nur mobile): [job.js](src/job.js)
 - Diese Ansicht ist für den Druck optimiert
 
 ## Verhalten der Links zwischen den einzelnen Ansichten
@@ -69,4 +70,4 @@ Für dieses Verhalten werden Sie die opener-URL jeweils an die Links hängen mü
 
 # Kontakt
 
-Bei Fragen kontaktiert Solique Fabian Jordi unter [fabian@joinbox.com](fabian@joinbox.com) oder [+41 76 548 76 06](+41 76 548 76 06).
+Bei Fragen kontaktiert Solique Fabian Jordi unter [fabian@joinbox.com](fabian@joinbox.com) oder [+41 76 548 76 06](tel:+41765487606).

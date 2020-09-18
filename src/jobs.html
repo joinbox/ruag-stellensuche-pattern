@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pattern Base CSS Test</title>
+    <title>Jobsearch</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -23,38 +23,143 @@
     <link rel="stylesheet" href="main.css">
 
 </head>
-<body style="padding: 4rem 0">
+<body>
 
 <div class="ruag-c-jobsearch e-pattern-base-styles">
     <div class="ruag-c-jobsearch__inner">
         <div class="ruag-c-jobsearch__filters">
             <h3 class="ruag-e-heading ruag-e-heading--widget">Stellen filtern</h3>
 
-            <label for="ruag-c-jobsearch__select-location" class="ruag-c-form__label">Ort</label>
-            <div class="ruag-c-jobsearch__select ruag-o-select">
-                <select id="ruag-c-jobsearch__select-location" class="ruag-o-select__element" name="location">
-                    <option class="ruag-o-select__option" value="">Ort wählen...</option>
-                    <option class="ruag-o-select__option" value="bern">Bern</option>
-                    <option class="ruag-o-select__option" value="emmen">Emmen</option>
-                </select>
+
+            <div class="ruag-c-jobsearch__filters-section">
+                <div class="ruag-c-jobsearch__filters-label">Stellen durchsuchen</div>
+
+                <div class="ruag-c-jobsearch__search">
+                    <svg class="ruag-e-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><title>Lupe</title><path d="M37.9,10.1A14,14,0,0,0,15.56,26.44L6,36v2l4,4h2l9.56-9.56A14,14,0,0,0,37.9,10.1Zm-2.82,17a10,10,0,1,1,0-14.16A10.07,10.07,0,0,1,35.08,27.08Z"/></svg>
+                    <input class="ruag-c-jobsearch__search-input" type="search" placeholder="Suchbegriff eingeben" />
+                </div>
+
             </div>
 
-            <label for="ruag-c-jobsearch__select-scope" class="ruag-c-form__label">Tätigkeitsbereich</label>
-            <div class="ruag-c-jobsearch__select ruag-o-select">
-                <select id="ruag-c-jobsearch__select-scope" class="ruag-o-select__element" name="scope">
-                    <option class="ruag-o-select__option" value="">Tätigkeitsbereich wählen...</option>
-                    <option class="ruag-o-select__option" value="forschung-entwicklung">Forschung & Entwicklung</option>
-                    <option class="ruag-o-select__option" value="it-telekommunikation">IT / Telekommunikation</option>
-                </select>
+
+            <div class="ruag-c-jobsearch__filters-section">
+
+                <div class="ruag-c-jobsearch__dropdown ruag-c-jobsearch__dropdown--open">
+                    <div class="ruag-c-jobsearch__dropdown-select">
+                        <div class="ruag-c-jobsearch__dropdown-select-text">Ort</div>
+                        <div class="ruag-c-jobsearch__dropdown-select-indicatiors">
+                            <div class="ruag-c-jobsearch__dropdown-select-badge">2</div>
+                            <div class="ruag-c-jobsearch__dropdown-select-arrow"></div>
+                        </div>
+                    </div>
+
+                    <div class="ruag-c-jobsearch__dropdown-options">
+                        <div class="ruag-c-jobsearch__dropdown-option">
+                            <div class="ruag-c-jobsearch__dropdown-option-name">
+                                <div class="ruag-c-jobsearch__dropdown-option-check"></div>
+                                <div class="ruag-c-jobsearch__dropdown-option-text">Alpnach</div>
+                            </div>
+                            <div class="ruag-c-jobsearch__dropdown-option-number">3</div>
+                        </div>
+
+                        <div class="ruag-c-jobsearch__dropdown-option ruag-c-jobsearch__dropdown-option--selected">
+                            <div class="ruag-c-jobsearch__dropdown-option-name">
+                                <div class="ruag-c-jobsearch__dropdown-option-check"></div>
+                                <div class="ruag-c-jobsearch__dropdown-option-text">Bern</div>
+                            </div>
+                            <div class="ruag-c-jobsearch__dropdown-option-number">5</div>
+                        </div>
+
+                        <div class="ruag-c-jobsearch__dropdown-option">
+                            <div class="ruag-c-jobsearch__dropdown-option-name">
+                                <div class="ruag-c-jobsearch__dropdown-option-check"></div>
+                                <div class="ruag-c-jobsearch__dropdown-option-text">Emmen</div>
+                            </div>
+                            <div class="ruag-c-jobsearch__dropdown-option-number">8</div>
+                        </div>
+
+                        <div class="ruag-c-jobsearch__dropdown-option">
+                            <div class="ruag-c-jobsearch__dropdown-option-name">
+                                <div class="ruag-c-jobsearch__dropdown-option-check"></div>
+                                <div class="ruag-c-jobsearch__dropdown-option-text">Interlaken</div>
+                            </div>
+                            <div class="ruag-c-jobsearch__dropdown-option-number">10</div>
+                        </div>
+
+                        <div class="ruag-c-jobsearch__dropdown-option ruag-c-jobsearch__dropdown-option--selected">
+                            <div class="ruag-c-jobsearch__dropdown-option-name">
+                                <div class="ruag-c-jobsearch__dropdown-option-check"></div>
+                                <div class="ruag-c-jobsearch__dropdown-option-text">Stans</div>
+                            </div>
+                            <div class="ruag-c-jobsearch__dropdown-option-number">2</div>
+                        </div>
+
+                        <div class="ruag-c-jobsearch__dropdown-option">
+                            <div class="ruag-c-jobsearch__dropdown-option-name">
+                                <div class="ruag-c-jobsearch__dropdown-option-check"></div>
+                                <div class="ruag-c-jobsearch__dropdown-option-text">Thun</div>
+                            </div>
+                            <div class="ruag-c-jobsearch__dropdown-option-number">7</div>
+                        </div>
+
+                        <div class="ruag-c-jobsearch__dropdown-option">
+                            <div class="ruag-c-jobsearch__dropdown-option-name">
+                                <div class="ruag-c-jobsearch__dropdown-option-check"></div>
+                                <div class="ruag-c-jobsearch__dropdown-option-text">Zweisimmen</div>
+                            </div>
+                            <div class="ruag-c-jobsearch__dropdown-option-number">9</div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="ruag-c-jobsearch__dropdown">
+                    <div class="ruag-c-jobsearch__dropdown-select">
+                        <div class="ruag-c-jobsearch__dropdown-select-text">Tätigkeitsbereich</div>
+                        <div class="ruag-c-jobsearch__dropdown-select-indicatiors">
+                            <div class="ruag-c-jobsearch__dropdown-select-badge">1</div>
+                            <div class="ruag-c-jobsearch__dropdown-select-arrow"></div>
+                        </div>
+                    </div>
+
+                    <div class="ruag-c-jobsearch__dropdown-options">
+                        <div class="ruag-c-jobsearch__dropdown-option">
+                            <div class="ruag-c-jobsearch__dropdown-option-name">
+                                <div class="ruag-c-jobsearch__dropdown-option-check"></div>
+                                <div class="ruag-c-jobsearch__dropdown-option-text">Forschung & Entwicklung</div>
+                            </div>
+                            <div class="ruag-c-jobsearch__dropdown-option-number">3</div>
+                        </div>
+
+                        <div class="ruag-c-jobsearch__dropdown-option ruag-c-jobsearch__dropdown-option--selected">
+                            <div class="ruag-c-jobsearch__dropdown-option-name">
+                                <div class="ruag-c-jobsearch__dropdown-option-check"></div>
+                                <div class="ruag-c-jobsearch__dropdown-option-text">IT/Telekommunikation</div>
+                            </div>
+                            <div class="ruag-c-jobsearch__dropdown-option-number">5</div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
-            <label for="ruag-c-jobsearch__select-experience" class="ruag-c-form__label">Berufserfahrung</label>
-            <div class="ruag-c-jobsearch__select ruag-o-select">
-                <select id="ruag-c-jobsearch__select-experience" class="ruag-o-select__element" name="experience">
-                    <option class="ruag-o-select__option" value="">Berufserfahrung wählen...</option>
-                    <option class="ruag-o-select__option" value="berufseinsteigende">Berufseinsteigende</option>
-                    <option class="ruag-o-select__option" value="berufserfahrene">Berufserfahrene</option>
-                </select>
+
+            <div class="ruag-c-jobsearch__filters-section">
+                <div class="ruag-c-jobsearch__filters-label ruag-c-jobsearch__slider-label">Pensum <span><strong>50–80%</strong></span></div>
+
+                <div class="ruag-c-jobsearch__slider">
+                    <div class="ruag-c-jobsearch__slider-baseline"></div>
+                    <div class="ruag-c-jobsearch__slider-range"></div>
+                    <div class="ruag-c-jobsearch__slider-handle js-jobsearch-slider-handle-lower" style="left:50%">
+                        <div class="ruag-c-jobsearch__slider-handle-indicator">50</div>
+                    </div>
+                    <div class="ruag-c-jobsearch__slider-handle ruag-c-jobsearch__slider-handle--active js-jobsearch-slider-handle-upper" style="right:20%">
+                        <div class="ruag-c-jobsearch__slider-handle-indicator">80</div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -119,9 +224,6 @@
         </div>
     </div>
 </div>
-
-<script src="main.js"></script>
-
 
 </body>
 </html>
